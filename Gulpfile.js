@@ -45,4 +45,4 @@ gulp.task('watch', function () {
   ], ['html']);
 })
 // Task name
-gulp.task('EPW', ['connect','css','html','js','watch']);
+gulp.task('EXPW', ['connect','css','html','js','watch']);

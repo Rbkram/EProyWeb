@@ -1,7 +1,66 @@
-/*#player{
+@font-face {
+	font-family: 'Futura-Light';
+	src: url(../fonts/Futura/FuturaPTLight_1.otf);
+}
+
+@font-face {
+	font-family: 'GreatVibes-Regular';
+	src: url(../fonts/GreatVibes/GreatVibes-Regular.ttf);
+}
+
+#landing{
 	background-image: url(../imgs/landingphoto.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 750px;
-};
-*/
+}
+
+#logo {
+	margin-top: 20px;
+}
+
+#logo h2{
+	font-family: 'GreatVibes-Regular';
+	display: inline;
+	color: #fff;
+}
+
+.navbar{
+	background: #170803;
+	border: none;
+	border-radius: 0;
+}
+
+#enlaces li a {
+	color: #fff;
+}
+
+#navSpace{
+	margin-bottom: 230px;
+}
+
+#titles, #textInfo{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#titles p{
+	display: inline-block;
+	font-size: 2.857em;
+	font-family: 'Futura-Light';
+	color: #fff;
+	text-align: center;
+}
+
+#textInfo p{
+	color: #fff;
+	font-size: 1.286em;
+	font-family: 'Futura-Light';
+}
+
+#text{
+	margin-bottom: 300px;
+	background: rgba(23,8,3, 0.7);
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-radius: 7px;
+}
