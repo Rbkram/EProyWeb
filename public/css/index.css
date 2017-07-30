@@ -43,8 +43,8 @@ md-input-container{
 	color: #fff;
 }
 
-#navSpace{
-	margin-bottom: 230px;
+#text{
+	margin-top: 230px;
 }
 
 #titles, #textInfo{
@@ -78,4 +78,9 @@ md-input-container{
 
 #playerForm{
 	margin-bottom: 60px;
+}
+
+
+#topBar{
+	background: #170803;
 }
