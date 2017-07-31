@@ -102,10 +102,6 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 #playerForm{
 	margin-top: 100px;
 	margin-bottom: 100px;
-	/*background: rgba(23,8,3, 0.1);
-	border-radius: 7px;
-	padding-top: 50px;
-	padding-bottom: 50px;*/
 }
 
 #buttonLogo{
@@ -144,3 +140,15 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 	box-shadow: 0 0 3px rgba(0,0,0,.4);
 }
 
+/* estilos de compra de propiedad */
+
+#selectPlayer {
+	width: 100%;
+	background: inherit;
+	outline: none;
+	border-bottom: 1px solid #a1a2a2;
+}
+
+#infoBodyProp p span{
+	font-weight: bold;
+}

@@ -83,8 +83,7 @@
         .targetEvent()
         );
     };
-
-
+    
   }
 
      //se establece un objeto de angular normal

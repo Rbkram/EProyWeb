@@ -37,7 +37,8 @@
 ];
     var publicAPI = {
       setPlayers : _setPlayers,
-      getPlayers : _getPlayers
+      getPlayers : _getPlayers,
+      updatePlayer : _updatePlayer
       //updateCompetition : _updateCompetition
     };
     return publicAPI; // todas las funciones que sean llamadas por ajax deben estar debajo del return, para que cuando angular corra el script haga el return y devuelva el api , las funciones debajo del return son privadas y se devuelve el api que es el que contiene las funciones
@@ -58,6 +59,19 @@
       }
       return playersList;
     }
+
+    // Función para guardar modificación de información de eventos
+    function _updatePlayer(pModMoney){
+      var playersList = _getPlayers();
+      for(var i = 0; i < playersList.length; i++){
+        if(playersList[i].id == pModMoney.id){
+          playersList[i] = pModMoney;
+        }
+      }
+      console.log(playersList);
+      localStorage.setItem('lsPlayersList', JSON.stringify(playersList));
+    }
+
   }
 
 })();

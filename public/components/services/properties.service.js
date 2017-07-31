@@ -717,7 +717,8 @@
     }
 ];
     var publicAPI = {
-      getProperties : _getProperties
+      getProperties : _getProperties,
+      updateProperty :_updateProperty
       //updateCompetition : _updateCompetition
     };
     return publicAPI; // todas las funciones que sean llamadas por ajax deben estar debajo del return, para que cuando angular corra el script haga el return y devuelva el api , las funciones debajo del return son privadas y se devuelve el api que es el que contiene las funciones
@@ -730,6 +731,21 @@
       }
       return propertiesList;
     }
+
+    // Función para guardar modificación de información de eventos
+    function _updateProperty(pModOwner){
+      var propertiesList = _getProperties();
+      for(var i = 0; i < propertiesList.length; i++){
+        if(propertiesList[i].id == pModOwner.id){
+          propertiesList[i] = pModOwner;
+        }
+      }
+      console.log(propertiesList);
+      localStorage.setItem('lsPropertiesList', JSON.stringify(propertiesList));
+    }
   }
 
 })();
+
+
+

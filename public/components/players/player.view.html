@@ -83,12 +83,14 @@
 					</div>
 				</form>
 			</div>
+
+			<!-- cards de los jugadores -->
 			<div id="players" class="col-xs-12">
 				<div class="col-xs-12 md-whiteframe-3dp barName">
 					<p>JUGADORES</p>
 				</div>
 				<div id="cardsSpace" class="col-xs-12">
-					<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="player in vm.players">
+					<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="player in vm.players track by $index">
 						<md-card class="user-card">
 							<md-card-avatar class="avatar avatar-test text-center">
 								<img id="imgPlayer" width="100px" height="100px" src="{{player.photo}}">
@@ -96,15 +98,10 @@
 							<md-toolbar class="red">
 								<p class="md-headline name-test text-center" layout="column" layout-align="start">{{player.name}} <br> Alias: {{player.alias}}</p>
 							</md-toolbar>
-							<md-card-title>
-								<md-card-title-text layout="row">
-									<div class="text-center">
-										<span>Código: {{player.id}}</span>
-										<br>
-										<span>Dinero: {{player.money}}</span>
-									</div>
-								</md-card-title-text>
-							</md-card-title>
+							<md-card-content class="text-center">
+								<p>Código: {{player.id}}</p>
+								<p>Dinero: {{player.money}}</p>
+							</md-card-content>
 						</md-card>
 					</div>
 				</div>
