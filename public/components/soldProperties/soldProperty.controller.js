@@ -3,14 +3,16 @@
     .module('myApp')
     .controller('soldPropCtrl', soldPropCtrl);
 
-    soldPropCtrl.$inject = ['$scope', '$location'];
+    soldPropCtrl.$inject = ['$scope', '$location', '$mdDialog', 'imageService', 'playerService','propertiesService'];
 
-    function soldPropCtrl($scope, $location){ //se inyecta el service userService en el controlador para que se tenga acceso
+    function soldPropCtrl($scope, $location, $mdDialog, imageService, playerService, propertiesService){ //se inyecta el service userService en el controlador para que se tenga acceso
       //controlador
       var vm = this; //binding del controlador con el html, solo en el controlador
 
       function init(){ // función que se llama así misma para indicar que sea lo primero que se ejecute
-        
+        vm.players = playerService.getPlayers();
+        console.log(vm.players);
+        vm.properties = propertiesService.getProperties();
        }init();
 
        // vm.logIn = function(event){

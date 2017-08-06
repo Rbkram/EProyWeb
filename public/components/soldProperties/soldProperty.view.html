@@ -1,3 +1,30 @@
 <section class="container-fluid">
 	<div ng-include="'./../components/includes/nav.html'" scope="" onload=""></div>
+
+	<!-- Escoger jugador -->
+	<div id="spaceSelect" class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6">
+		<md-input-container>
+			<label>Selecciona nombre del jugador</label>
+			<md-select  name="idPlayer" ng-model="vm.soldProp.idPlayer">
+				<md-option value="{{player.vm.players}}">Todos</md-option>
+				<md-option ng-repeat="player in vm.players" value="{{player.id}}">{{player.name}}</md-option>
+			</md-select>
+		</md-input-container>
+	</div>
+
+	<div id="cardsSpace2" class="col-xs-12">
+		<div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="property in vm.properties | filter:{ownedby:vm.soldProp.idPlayer} | filter:{ownedby:'!-1'}">
+			<!-- Cards de las propiedades -->
+			<md-card class="user-card headCard">
+				<md-toolbar class="red">
+					<p class="md-headline name-test text-center" layout="column" layout-align="start">{{property.name}}</p>
+				</md-toolbar>
+				<md-card-content class="text-center">
+					<p>id: {{property.id}}</p>
+					<p>Grupo: {{property.group}}</p>
+					<p>Dueño: {{property.ownedby}}</p>
+				</md-card-content>
+			</md-card>
+		</div>
+	</div>
 </section>

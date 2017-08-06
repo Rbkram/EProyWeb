@@ -7,30 +7,30 @@
   function playerService(){
     var players = [
   {
-    id: '001',
+    id: 1,
     name:'Goku',
     alias: 'Kokkun',
     money: 1500,
     photo:'https://res.cloudinary.com/pabskun/image/upload/v1489535279/goku_cqc9tb.png'
   },
   {
-    id: '002',
+    id: 2,
     name:'Piccolo',
     alias: 'PikOREO',
     money: 1500,
   photo:'https://res.cloudinary.com/pabskun/image/upload/v1489535276/piccolo_ksxdec.png'
   },
   {
-    id: '003',
+    id: 3,
     name:'Logan',
     alias: 'Lovezno',
     money: 1500,
     photo:'https://res.cloudinary.com/pabskun/image/upload/v1489535284/lobezno_o1vs9g.png'
   },
   {
-    id: '004',
+    id: 4,
     name:'Bomberman',
-    alias: 'Don Pepe y los Globos',
+    alias: 'Don Pepe',
     money: 1500,
     photo:'https://res.cloudinary.com/pabskun/image/upload/v1489535282/donpepe_x9hksw.png'
   }

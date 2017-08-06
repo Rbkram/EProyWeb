@@ -93,6 +93,19 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 	border-radius: 7px;
 }
 
+.headCard md-toolbar{
+	background: rgba(194,100,43, 0.7);
+	color: #fff;
+}
+md-toolbar{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#cardsSpace2 .clickButton, #playerForm .clickButton {
+	background-color: rgba(5,85,97, 0.2);
+	color: #484b53;
+
+}
 /*registro styles*/
 
 #regPlayer, #properties{
@@ -105,16 +118,12 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 }
 
 #buttonLogo{
-	background: #055561;
+	background: rgba(23,8,3, 0.7);
 	border: none;
 	border-radius: 7px;
 	text-align: center;
 	color: #fff;
 	width: 100%;
-}
-
-#buttonLogo:hover{
-	background: #076a7f;
 }
 
 #players .barName{
@@ -133,7 +142,7 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 }
 
 #cardsSpace {
-	height: 275px;
+	height: 320px;
 	overflow: scroll;
 	direction: rtl;
 	margin: 30px auto;
@@ -151,4 +160,19 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
 
 #infoBodyProp p span{
 	font-weight: bold;
+}
+
+
+#buySpace {
+	border: 1px solid rgba(23,8,3, 0.7);
+	border-radius: 8px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 50px;
+}
+#buySpace p{
+	text-align: center;
+	font-style: oblique;
+	color: #a1a2a2;
+	margin-bottom: 50px;
 }
